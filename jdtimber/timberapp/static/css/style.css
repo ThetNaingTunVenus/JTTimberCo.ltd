@@ -1,0 +1,558 @@
+/*Navbar*/
+
+#nav-bar .navbar-brand{
+	color: #f7a305;
+	font-size: 40px;
+	font-weight: 500;
+	padding: 10px 20px;
+}
+
+.navbar{
+		/*background-color: #D1D1D1;*/
+		/*background-color: white;*/
+		/*background-color: #01040a;*/
+		height: 100px;
+		opacity: 0.75;
+		/*opacity: 0.1;*/
+		/*position: static;*/
+		/*top: 0;*/
+	}
+
+#nav-bar ul li a{
+	/*background-color: #D1D1D1;*/
+	color: #f7a305;
+	font-size: 21px;
+	font-weight: 600;
+	padding: 10px 20px;
+/*
+	position: relative;
+	display: block;
+	transition: .5s;*/
+}
+
+/*======================= double bar ============================*/
+/*
+
+#nav-bar ul li a:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-top: 1px solid #f7a305;
+	border-bottom: 1px solid #f7a305;
+	transform: scaleY(2);
+	opacity: 0;
+	transition: .5s;
+}
+
+#nav-bar ul li a:hover:before
+{
+	transform: scaleY(1);
+	opacity: 1;
+}*/
+
+/*#nav-bar ul li a:hover{
+	color: #9c8003;
+}*/
+/*======================= double bar ============================*/
+/*Navbar*/
+
+
+/*Abouts Us*/
+
+.about-us{
+	padding: 20px 10px;
+}
+
+.about-us .section-title{
+
+	flex: 0 0 100%;
+	max-width: 100%;
+	margin-bottom: 10px;
+
+}
+
+/*.about-us .section-title h1{
+
+	display: inline-block;
+	font-size: 35px;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin: 0 0 10px;
+	color: #000000;
+	position: relative;
+	padding-bottom: 5px;
+}
+
+.about-us .section-title h1:before{
+	content: '';
+	left: 0;
+	right: 0;
+	height: 2px;
+	background-color: #f5f50c;
+	bottom: 0px;
+	position: absolute;
+
+}*/
+
+/*30112020 edit header*/
+
+.about-us .section-title h3{
+
+	display: inline-block;
+	/*font-size: 35px;*/
+	text-transform: uppercase;
+	/*font-weight: 600;*/
+	margin: 0 0 10px;
+	color: #000000;
+	position: relative;
+	padding-bottom: 5px;
+}
+
+.about-us .section-title h3:before{
+	content: '';
+	left: 0;
+	right: 0;
+	height: 2px;
+	background-color: #f5f50c;
+	bottom: 0px;
+	position: absolute;
+
+}
+/*30112020 edit header end */
+
+
+
+.about-us .section-title p{
+	font-size: 20px;
+	display: block;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+.text-uppercase{
+	text-transform: uppercase!important;
+}
+
+.about-us .about-content{
+
+}
+
+.about-us .about-content .img img{
+	display: block;
+}
+
+.about-us .about-content .text{
+
+	flex: 0 0 54%;
+	max-width: 0 0 54%
+
+}
+
+.about-us .about-content .text h4{
+	padding-left: 30px;
+}
+
+
+.about-us .about-content .text p{
+	padding-left: 30px;
+	padding-right: 20px;
+	font-size: 26px;
+}
+
+.about-us .about-content .text p span{
+	color: #f5f50c;
+	font-weight: 500;
+}
+
+.about-photo{
+	width: 500px;
+	height: 350px;
+	background-color: white;
+
+}
+
+/*Abouts Us*/
+
+/*affiliate*/
+
+
+#affiliate h3{
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	border-bottom: 2px solid #f5f50c;
+	width: 120px;
+
+
+}
+
+/*#affiliate .row{*/
+	/*padding: 30px 20px;*/
+	/*background-color: red;*/
+/*}*/
+
+/*#affiliate .row .col-md-4 img{*/
+	/*margin-left: 5px;*/
+	/*padding-left: 10px;*/
+/*}*/
+
+/*affiliate*/
+
+
+/*Product Gellary*/
+
+.productphoto{
+	/*background-color: #d1d1ab;*/
+	padding: 60px 5px;
+}
+
+.productphoto .container .row .section-title{
+	padding-left: 0%;
+	text-transform: uppercase;
+}
+
+
+.productphoto .container .row .section-title h3{
+	display: inline-block;
+	/*font-size: 35px;*/
+	/*text-transform: uppercase;*/
+	font-weight: 600;
+	margin: 0 0 10px;
+	color: #000000;
+	position: relative;
+	padding-bottom: 5px;
+}
+
+
+.productphoto .container .row .section-title h3:before{
+
+	content: '';
+	left: 0;
+	right: 0;
+	height: 2px;
+	background-color: #f5f50c;
+	bottom: 0px;
+	position: absolute;
+}
+
+.productphoto .filter-buttons{
+
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+.productphoto .filter-buttons ul{
+	list-style: none;
+	text-align: center;
+	padding: 1px;
+}
+
+.productphoto .filter-buttons ul li{
+	display: inline-block;
+	color: #000000;
+	margin: 0 10px;
+	font-weight: 500;
+	font-size: 18px;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: none;
+	/*for hide tag*/
+}
+
+.productphoto .filter-buttons ul li.active{
+	
+	color:#f5f50c;
+	border-bottom: 2px solid #f5f50c;
+}
+
+.productphoto .filter-buttons{
+
+	margin-bottom: 18px;
+}
+
+.productphoto .product-gellary{
+
+	flex: 0 0 100%;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+
+.productphoto .product-gellary .item{
+
+	flex: 0 0 33.33%;
+	max-width:0 0 33.33%;
+	/*margin-bottom: 15px;*/
+	position: relative;
+	padding: 8px;
+
+}
+
+.productphoto .product-gellary .item .inner{
+	position: relative;
+}
+
+.productphoto .product-gellary .item img{
+	width: 100%;
+	display: block;
+}
+
+.productphoto .product-gellary .item .overlay{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 10;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: all .5s ease;
+}
+
+.productphoto .product-gellary .item:hover .overlay{
+	opacity: 1;
+}
+
+.productphoto .product-gellary .item .overlay .fa{
+	height: 50px;
+	width: 50px;
+	background-color: #f5e50c;
+	color: #ffffff;
+	display: inline-block;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+
+
+}
+.productphoto .product-gellary .item:hover .overlay .fa{
+	-webkit-animation: galleryIcon .8s ease;
+	animation: galleryIcon .8s ease;
+
+}
+
+@keyframes galleryIcon{
+	0%{
+		transform: translateY(-20px);opacity: 0;
+	}
+	100%{
+		transform: translateY(0);opacity: 1;
+	}
+}
+.productphoto .product-gellary .item .overlay h4{
+	font-size: 25px;
+	color: #ffffff;
+	font-weight: 600;
+	margin-top: 15px;
+	animation: galleryText .8s ease;
+}
+
+.productphoto .product-gellary .item:hover .overlay h4{
+	-webkit-animation: galleryText .8s ease;
+	animation: galleryText .8s ease;
+
+}
+
+@keyframes galleryText{
+	0%{
+		transform: translateY(20px);opacity: 0;
+	}
+	100%{
+		transform: translateY(0);opacity: 1;
+	}
+}
+/*Product Gellary*/
+
+.lightbox{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 100;
+	background-color: rgba(0,0,0,0.6);
+	/*display: none;*/
+	justify-content: center;
+	align-items: center;
+}
+
+.lightbox.show{
+	display: flex;
+}
+.lightbox.hide{
+	display: none;
+}
+
+
+.lightbox .close-lightbox{
+	height: 40px;
+	width: 40px;
+	background-color: #e6db10;
+	color: #ffffff;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+
+.lightbox img{
+	max-width: 100%;
+	max-height: 80%;
+	display: block;
+}
+
+/*Product Gallery*/
+
+
+/*Contact*/
+
+
+.teak-injuery h1{
+	color: #FFC107;
+	margin-left: 420px;
+	margin-top: 100px;
+	/*text-align: center;*/
+	padding: 30px 5px;
+
+
+	
+
+
+}
+
+.teak-injuery p{
+	font-size: 20px;
+	padding: 20px 200px;
+	font-weight: 500;
+}
+
+.form-injuery{
+
+
+	/*padding: 80px 2px;*/
+}
+
+.form-injuery .card{
+	/*background-color: red;*/
+	margin-left: 150px;
+	margin-right: 200px;
+}
+
+.form-injuery .card-body h2{
+	color: #FFC107;
+	margin-left: 10px;
+
+
+
+}
+
+.form-injuery .card-body .form-group{
+	/*background-color: red;*/
+	padding-left: 10px;
+}
+.form-injuery .card-body .form-group label{
+	/*color: #22eb0c;*/
+	font-size: 16px;
+
+}
+
+
+/*Contact*/
+
+
+
+/*Footer*/
+
+
+.partnership .container-fluid .row{
+	background-color: #D1D1D1;
+
+	padding: 20px 15px;
+
+
+}
+
+/*Footer*/
+
+/*Veneer html*/
+
+#veneerslide{
+	/*background-color: red;*/
+	margin-top: 100px;
+}
+
+
+
+.container .teak-logs h3{
+	
+	display: inline-block;
+	/*font-size: 35px;*/
+	text-transform: uppercase;
+	font-weight: 600;
+	margin: 0 0 10px;
+	color: #000000;
+	position: relative;
+	padding-bottom: 5px;
+}
+
+.container .teak-logs h3:before{
+	content: '';
+	left: 0;
+	right: 0;
+	height: 2px;
+	/*background-color: #f5f50c;*/
+	background-color: #EE9E06;
+	bottom: 0px;
+	position: absolute;
+
+}
+
+#veneerslide p
+{
+	/*color: #f7f70f;*/
+	color: #EE9E06;
+	font-size: 22px;
+	padding: 1px 5px;
+	font-family: ;
+	position: relative;
+}
+
+#veneerslide p:after
+{
+	content: '';
+	display: block;
+	height: 3px;
+	width: 950px;
+	position: absolute;
+	/*background: #f7f70f;*/
+	background: #EE9E06;
+	right: 0;
+	top: 20;
+	z-index: -2;
+}
+
+
+/*Veneer html*/
+
+/*Text of Paragraph*/
+
+/*#firstslideid p{*/
+/*	background-color: red;*/
+/*}*/
+/*Text of Paragraph*/

@@ -1,0 +1,97 @@
+{% load static %}
+<section id="nav-bar"><nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+  <a class="navbar-brand" href="{% url 'index' %}">JT Timber Co., Ltd.</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'index' %}">HOME<span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         TEAK PRODUCTS
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: black;">
+          <a class="dropdown-item" href="{% url 'veneer' %}" style="background-color: black;">Veneer</a>
+          <a class="dropdown-item" href="{% url 'decking' %}"style="background-color: black;">Decking</a>
+          <a class="dropdown-item" href="{% url 'lumber' %}"style="background-color: black;">Board & Lumber</a>
+          <a class="dropdown-item" href="{% url 'moulding' %}"style="background-color: black;">Moulding</a>
+          <a class="dropdown-item" href="{% url 'agedwood' %}"style="background-color: black;">Aged wood</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'contact' %}">CONTACT</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<section class="homename">
+  <div class="container">
+    <div class="row fullscreen">
+      <div class="home-content">
+        <div class="block">
+          <h1>Distributing Burma Teak</h1>
+          <h3>Worldwide Since 1985</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+</section>
+
+<style type="text/css">
+	#nav-bar{
+		background-image: url({% static 'images/navphoto.jpg' %});
+		background-size: cover;
+    min-height: 100vh;
+		
+
+	}
+  nav{
+    border: 3px solid #f7a305;
+  }
+  .navbar{
+    /*background-color: #D1D1D1;*/
+
+   
+  }
+  .homename .fullscreen{
+    min-height: 100vh;
+  }
+
+  .homename .home-content{
+    /*background-color: red;*/
+    flex: 0 0 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .homename .block{
+    /*background-color: blue;*/
+    flex: 0 0 65%;
+    max-width: 65%;
+    padding-left: 20px;
+    border-left: 5px solid #ffffff;
+  }
+  .homename .block h1{
+    color: #ffffff;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  .homename .block h3{
+    color: #ffffff;
+    font-size: 34px;
+    line-height: 1.5;
+  }
+
+  .dropdown:hover>.dropdown-menu{display: block;}
+
+
+
+</style>
