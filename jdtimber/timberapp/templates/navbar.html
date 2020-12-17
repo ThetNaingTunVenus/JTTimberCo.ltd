@@ -1,6 +1,6 @@
 {% load static %}
-<section id="nav-bar"><nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
-  <a class="navbar-brand" href="{% url 'index' %}">JT Timber Co., Ltd.</a>
+<nav class="navbar navbar-expand-lg fixed-top" style="background-color: black;">
+  <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'images/logo.jpg' %}"> JT Timber Co., Ltd.</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -29,8 +29,12 @@
   </div>
 </nav>
 
+
+<section id="nav-bar">
+ 
+
 <section class="homename">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row fullscreen">
       <div class="home-content">
         <div class="block">
@@ -44,23 +48,14 @@
 </section>
 
 <style type="text/css">
-	#nav-bar{
-		background-image: url({% static 'images/navphoto.jpg' %});
-		background-size: cover;
-    min-height: 100vh;
-		
-
-	}
-  nav{
-    border: 3px solid #f7a305;
-  }
-  .navbar{
-    /*background-color: #D1D1D1;*/
-
-   
-  }
+ 
+  
   .homename .fullscreen{
     min-height: 100vh;
+    background-image: url({% static 'images/navphoto.jpg' %});
+    background-size: cover;
+
+    /*width: 100%;*/
   }
 
   .homename .home-content{
@@ -77,6 +72,7 @@
     max-width: 65%;
     padding-left: 20px;
     border-left: 5px solid #ffffff;
+    margin-left: 55px;
   }
   .homename .block h1{
     color: #ffffff;
@@ -90,8 +86,40 @@
     line-height: 1.5;
   }
 
+
   .dropdown:hover>.dropdown-menu{display: block;}
 
 
 
+nav a img{
+  width: 80px;
+}
+
+.navbar
+{
+  height: 100px;
+  opacity: 0.75;
+}
+
+nav ul li a{
+  /*background-color: #D1D1D1;*/
+  color: #f7a305;
+  font-size: 21px;
+  font-weight: 500;
+  padding: 10px 20px;
+
+}
+
+.navbar-brand{
+  color: #f7a305;
+  font-size: 40px;
+  font-weight: 500;
+  padding: 10px 20px;
+  font-family:"Times New Roman";
+}
+
+.dropdown-item
+{
+  color: #f7a305;
+}
 </style>
