@@ -42,22 +42,22 @@ def contact(request):
 
 def sendinjuiry(request):
 
-	# subject = 'hello, thank you message your advice'
-	# message = 'successful send message to email'
-	# email = settings.EMAIL_HOST_USER
+	subject = 'hello, thank you message your advice'
+	message = 'successful send message to email'
+	email = settings.EMAIL_HOST_USER
 
 	if request.method == 'POST':
 
 		email = settings.EMAIL_HOST_USER
-		subject = request.POST['subject']
-		message = request.POST['message']
+		# subject = request.POST['subject']
+		# message = request.POST['message']
 
 		send_mail(
 			subject,
 			message,
 			email,
 			['kokothet1994.2@gmail.com.com'],
-			# fail_silently=False
+			fail_silently=False
 			)
 		return redirect('index')
 
