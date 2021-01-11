@@ -14,24 +14,21 @@ def index(request):
 	return render(request,'index.html')
 
 def veneer(request):
-	veneerlist = VeneerModel.objects.all()
-	return render(request,'veneer.html',{"VeneerModel":veneerlist})
+	# veneerlist = VeneerModel.objects.all()
+	return render(request,'veneer.html')
 
 def decking(request):
-	deckinglist = DeckingModel.objects.all()
-	return render(request,'decking.html',{"DeckingModel":deckinglist})
+	return render(request,'decking.html')
 
 def agedwood(request):
-	agedlist = AgedModel.objects.all()
-	return render(request,'agedwood.html',{"AgedModel":agedlist})
+	return render(request,'agedwood.html')
 
 def moulding(request):
-	mouldinglist = MoldingModel.objects.all()
-	return render(request,'moulding.html',{"MoldingModel":mouldinglist})
+	return render(request,'moulding.html',)
 
 def lumber(request):
-	lumberlist = LumberModel.objects.all()
-	return render(request,'lumber.html',{"LumberModel":lumberlist})
+	# lumberlist =
+	return render(request,'lumber.html',)
 
 
 def contact(request):
