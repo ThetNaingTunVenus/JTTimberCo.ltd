@@ -49,7 +49,7 @@ def sendinjuiry(request):
 	address = request.POST.get('address', '')
 	subject = request.POST.get('subject', '')
 	message = request.POST.get('message', '')
-	message_form = (f'Name = {name}<br> Business = {business}<br> Phone = {phone}<br> Address = {address} <br> {message}')
+	message_form = (f'Name = {name}<br> Business : {business}<br> Phone : {phone}<br> Address : {address} <br> {message}')
 	host_mai = settings.EMAIL_HOST_USER
 	email = EmailMessage(subject, message_form,email_id,[host_mai])
 	email.content_subtype = 'html'
